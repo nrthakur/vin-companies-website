@@ -24,11 +24,47 @@ export default function ContractingContact() {
     message: "",
   })
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const [isSubmitting, setIsSubmitting] = useState(false)
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    // Handle form submission here
-    console.log("Contracting contact form submitted:", formData)
-    alert("Thank you for your inquiry! We'll get back to you soon.")
+    setIsSubmitting(true)
+
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          ...formData,
+          company: 'contracting'
+        }),
+      })
+
+      const result = await response.json()
+
+      if (response.ok) {
+        alert('Thank you for your inquiry! We\'ll get back to you within 24 hours.')
+        // Reset form
+        setFormData({
+          name: "",
+          email: "",
+          phone: "",
+          projectType: "",
+          budget: "",
+          timeline: "",
+          message: "",
+        })
+      } else {
+        alert(`Error: ${result.error || 'Failed to send message. Please try again.'}`)
+      }
+    } catch (error) {
+      console.error('Error submitting form:', error)
+      alert('Failed to send message. Please try again or contact us directly.')
+    } finally {
+      setIsSubmitting(false)
+    }
   }
 
   const handleChange = (field: string, value: string) => {
@@ -157,8 +193,13 @@ export default function ContractingContact() {
                   />
                 </div>
 
-                <Button type="submit" className="w-full bg-[#4B1A12] hover:bg-[#4B1A12]/90 text-white" size="lg">
-                  Request Free Estimate
+                <Button 
+                  type="submit" 
+                  className="w-full bg-[#4B1A12] hover:bg-[#4B1A12]/90 text-white" 
+                  size="lg"
+                  disabled={isSubmitting}
+                >
+                  {isSubmitting ? 'Sending...' : 'Request Free Estimate'}
                 </Button>
               </form>
             </CardContent>

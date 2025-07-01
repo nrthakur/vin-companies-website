@@ -88,66 +88,6 @@ export default function EngineeringAbout() {
           </Card>
         </div>
 
-        {/* Team Section */}
-        <div className="mb-16">
-          <h2 className="text-3xl font-bold text-[#233966] text-center mb-12">Our Leadership Team</h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <Card className="border-[#233966]/20">
-              <CardContent className="p-6 text-center">
-                <Image
-                  src="/placeholder.svg?height=200&width=200"
-                  alt="Sunil Shah"
-                  width={200}
-                  height={200}
-                  className="rounded-full mx-auto mb-4"
-                />
-                <h3 className="text-xl font-bold text-[#233966] mb-2">Sunil Shah, P.Eng</h3>
-                <p className="text-[#F7CC46] font-semibold mb-3">Principal Engineer & Founder</p>
-                <p className="text-gray-600 text-sm">
-                  With over 15 years of experience in structural engineering, Sunil leads our team with expertise in
-                  complex commercial and residential projects.
-                </p>
-              </CardContent>
-            </Card>
-
-            <Card className="border-[#233966]/20">
-              <CardContent className="p-6 text-center">
-                <Image
-                  src="/images/vin.png?height=200&width=200"
-                  alt="Vin Shah"
-                  width={200}
-                  height={200}
-                  className="rounded-full mx-auto mb-4"
-                />
-                <h3 className="text-xl font-bold text-[#233966] mb-2">Vin Shah, P.Eng</h3>
-                <p className="text-[#F7CC46] font-semibold mb-3">Senior Civil Engineer</p>
-                <p className="text-gray-600 text-sm">
-                  Vin specializes in site development and infrastructure design, bringing 12 years of experience in
-                  municipal and private sector projects.
-                </p>
-              </CardContent>
-            </Card>
-
-            <Card className="border-[#233966]/20">
-              <CardContent className="p-6 text-center">
-                <Image
-                  src="/placeholder.svg?height=200&width=200"
-                  alt="Broski Bruh"
-                  width={200}
-                  height={200}
-                  className="rounded-full mx-auto mb-4"
-                />
-                <h3 className="text-xl font-bold text-[#233966] mb-2">Broski Bruh, P.Eng</h3>
-                <p className="text-[#F7CC46] font-semibold mb-3">Project Manager</p>
-                <p className="text-gray-600 text-sm">
-                  Broski oversees project delivery and client relationships, ensuring every project meets our high
-                  standards for quality and timeliness.
-                </p>
-              </CardContent>
-            </Card>
-          </div>
-        </div>
-
         {/* Certifications & Memberships */}
         <div className="bg-gray-50 rounded-2xl p-8">
           <h2 className="text-3xl font-bold text-[#233966] text-center mb-8">Certifications & Memberships</h2>

@@ -88,66 +88,6 @@ export default function ContractingAbout() {
           </Card>
         </div>
 
-        {/* Team Section */}
-        <div className="mb-16">
-          <h2 className="text-3xl font-bold text-[#4B1A12] text-center mb-12">Our Leadership Team</h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <Card className="border-[#4B1A12]/20">
-              <CardContent className="p-6 text-center">
-                <Image
-                  src="/placeholder.svg?height=200&width=200"
-                  alt="Sunil Shah"
-                  width={200}
-                  height={200}
-                  className="rounded-full mx-auto mb-4"
-                />
-                <h3 className="text-xl font-bold text-[#4B1A12] mb-2">Sunil Shah</h3>
-                <p className="text-[#F7CC46] font-semibold mb-3">Founder & General Manager</p>
-                <p className="text-gray-600 text-sm">
-                  With over 14 years in construction, Sunil leads our team with expertise in project management and
-                  quality control across all construction phases.
-                </p>
-              </CardContent>
-            </Card>
-
-            <Card className="border-[#4B1A12]/20">
-              <CardContent className="p-6 text-center">
-                <Image
-                  src="/placeholder.svg?height=200&width=200"
-                  alt="Maria Santos"
-                  width={200}
-                  height={200}
-                  className="rounded-full mx-auto mb-4"
-                />
-                <h3 className="text-xl font-bold text-[#4B1A12] mb-2">Vin Shah</h3>
-                <p className="text-[#F7CC46] font-semibold mb-3">Project Manager</p>
-                <p className="text-gray-600 text-sm">
-                  Vin oversees project scheduling and client relations, ensuring every project runs smoothly from
-                  start to finish with clear communication throughout.
-                </p>
-              </CardContent>
-            </Card>
-
-            <Card className="border-[#4B1A12]/20">
-              <CardContent className="p-6 text-center">
-                <Image
-                  src="/placeholder.svg?height=200&width=200"
-                  alt="David Thompson"
-                  width={200}
-                  height={200}
-                  className="rounded-full mx-auto mb-4"
-                />
-                <h3 className="text-xl font-bold text-[#4B1A12] mb-2">Broski Bruh</h3>
-                <p className="text-[#F7CC46] font-semibold mb-3">Lead Foreman</p>
-                <p className="text-gray-600 text-sm">
-                  Broski brings 18 years of hands-on construction experience, leading our field teams and ensuring the
-                  highest quality workmanship on every project.
-                </p>
-              </CardContent>
-            </Card>
-          </div>
-        </div>
-
         {/* Certifications & Memberships */}
         <div className="mb-16">
           <h2 className="text-3xl font-bold text-[#4B1A12] text-center mb-8">Certifications & Memberships</h2>
