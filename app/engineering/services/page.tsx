@@ -53,21 +53,22 @@ export default function EngineeringServices() {
             <CardHeader>
               <div className="flex items-center space-x-3">
                 <Calculator className="h-8 w-8 text-[#233966]" />
-                <CardTitle className="text-2xl text-[#233966]">Civil Engineering</CardTitle>
+                <CardTitle className="text-2xl text-[#233966]">Architectural Permitting</CardTitle>
               </div>
             </CardHeader>
             <CardContent className="space-y-4">
               <p className="text-gray-600">
-                Site development and infrastructure engineering services to support your development projects from
-                concept through construction.
+                Expert architectural permitting services to navigate the complexities of building codes and regulations,
+                ensuring your project is compliant and approved efficiently.
               </p>
               <ul className="space-y-2 text-sm text-gray-600">
-                <li>• Site development and planning</li>
-                <li>• Drainage and stormwater management</li>
-                <li>• Utility design and coordination</li>
-                <li>• Grading and earthwork design</li>
-                <li>• Municipal approvals and permits</li>
-                <li>• Environmental compliance</li>
+                <li>• Building permit applications and submissions - Ontario Building Code compliant</li>
+                <li>• Zoning by-law reviews and land use analysis</li>
+                <li>• Site plan approvals and coordination with municipal authorities</li>
+                <li>• Architectural design and documentation for permits</li>
+                <li>• Heritage, conservation, and environmental permitting</li>
+                <li>• Permit tracking, revisions, and agency follow-ups</li>
+                
               </ul>
               <div className="pt-4">
                 <Link href="/engineering/contact">

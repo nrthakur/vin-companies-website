@@ -19,7 +19,7 @@ export default function Footer() {
               />
             </div>
             <p className="text-gray-300 text-sm mb-4">
-              Professional structural and civil engineering services for residential, commercial, and industrial
+              Professional Architectural and Structural Engineering Services for residential, commercial, and industrial
               projects.
             </p>
             <div className="space-y-2 text-sm">

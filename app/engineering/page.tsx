@@ -26,7 +26,7 @@ export default function EngineeringHome() {
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
           <h1 className="text-5xl md:text-7xl font-bold mb-8">Vin Engineering</h1>
           <p className="text-2xl md:text-3xl mb-12 max-w-4xl mx-auto leading-relaxed">
-            Professional Structural and Civil Engineering Services
+            Professional Architectural and Structural Engineering Services
           </p>
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
             <Link href="/engineering/services">
@@ -72,8 +72,8 @@ export default function EngineeringHome() {
             <Card className="border-[#233966]/10 hover:border-[#233966]/30 transition-all duration-300 hover:shadow-lg">
               <CardContent className="p-8 text-center">
                 <Calculator className="h-16 w-16 text-[#233966] mx-auto mb-6" />
-                <h3 className="text-xl font-semibold text-[#233966] mb-4">Civil Engineering</h3>
-                <p className="text-gray-600">Site development, drainage, and infrastructure planning</p>
+                <h3 className="text-xl font-semibold text-[#233966] mb-4">Architectural Design</h3>
+                <p className="text-gray-600">Interior and exterior design for custom projects</p>
               </CardContent>
             </Card>
 
@@ -81,7 +81,7 @@ export default function EngineeringHome() {
               <CardContent className="p-8 text-center">
                 <FileText className="h-16 w-16 text-[#233966] mx-auto mb-6" />
                 <h3 className="text-xl font-semibold text-[#233966] mb-4">Permit Drawings</h3>
-                <p className="text-gray-600">Professional drawings and documentation for permits</p>
+                <p className="text-gray-600">Professional drawings and documentation for all types of permits</p>
               </CardContent>
             </Card>
 
