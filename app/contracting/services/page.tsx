@@ -64,10 +64,10 @@ export default function ContractingServices() {
               <ul className="space-y-2 text-sm text-gray-600">
                 <li>• Kitchen renovations</li>
                 <li>• Bathroom remodeling</li>
-                <li>• Basement finishing</li>
-                <li>• Home additions</li>
+                <li>• Office and Restaurent finishing</li>
+                <li>• Home additions, and coach houses</li>
                 <li>• Whole-home renovations</li>
-                <li>• Commercial tenant improvements</li>
+                <li>• Commercial unit renovations</li>
               </ul>
               <div className="pt-4">
                 <Link href="/contracting/contact">

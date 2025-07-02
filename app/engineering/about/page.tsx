@@ -25,7 +25,7 @@ export default function EngineeringAbout() {
             <h2 className="text-3xl font-bold text-[#233966] mb-6">Our Story</h2>
             <div className="space-y-4 text-gray-600">
               <p>
-                Founded in 2008, Vin Engineering Inc. has grown from a small structural engineering firm to a
+                Founded in 2011, Vin Engineering Inc. has grown from a small structural engineering firm to a
                 comprehensive engineering consultancy serving clients across residential, commercial, and industrial
                 sectors.
               </p>
@@ -117,8 +117,8 @@ export default function EngineeringAbout() {
               <div className="w-16 h-16 bg-[#233966] rounded-full flex items-center justify-center mx-auto mb-3">
                 <Award className="h-8 w-8 text-white" />
               </div>
-              <h3 className="font-semibold text-gray-900 mb-1">ISO 9001</h3>
-              <p className="text-sm text-gray-600">Quality Management Certified</p>
+              <h3 className="font-semibold text-gray-900 mb-1">Tarion Licensed</h3>
+              <p className="text-sm text-gray-600">Certified Tarion Builder </p>
             </div>
           </div>
         </div>

@@ -15,7 +15,7 @@ export default function ContractingAbout() {
           <h1 className="text-4xl md:text-5xl font-bold text-[#4B1A12] mb-6">About Vin General Contracting</h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Building dreams into reality with quality craftsmanship, reliable service, and unwavering commitment to
-            excellence since 2010.
+            excellence since 2011.
           </p>
         </div>
 
@@ -25,7 +25,7 @@ export default function ContractingAbout() {
             <h2 className="text-3xl font-bold text-[#4B1A12] mb-6">Our Story</h2>
             <div className="space-y-4 text-gray-600">
               <p>
-                Vin General Contracting Inc. was founded in 2010 with a simple yet powerful vision: to provide
+                Vin General Contracting Inc. was founded in 2011 with a simple yet powerful vision: to provide
                 exceptional construction and renovation services that exceed our clients' expectations while building
                 lasting relationships based on trust and quality.
               </p>
@@ -117,8 +117,8 @@ export default function ContractingAbout() {
               <div className="w-16 h-16 bg-[#F7CC46] rounded-full flex items-center justify-center mx-auto mb-3">
                 <Award className="h-8 w-8 text-[#4B1A12]" />
               </div>
-              <h3 className="font-semibold text-gray-900 mb-1">Bonded</h3>
-              <p className="text-sm text-gray-600">$500,000 Performance Bond</p>
+              <h3 className="font-semibold text-gray-900 mb-1">Tarion Licensed</h3>
+              <p className="text-sm text-gray-600">Certified Tarion Builder</p>
             </div>
           </div>
         </div>

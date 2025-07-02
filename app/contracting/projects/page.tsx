@@ -105,25 +105,6 @@ export default function ContractingProjects() {
           </p>
         </div>
 
-        {/* Stats */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-16">
-          <div className="text-center">
-            <div className="text-3xl md:text-4xl font-bold text-[#4B1A12] mb-2">300+</div>
-            <div className="text-sm text-gray-600">Projects Completed</div>
-          </div>
-          <div className="text-center">
-            <div className="text-3xl md:text-4xl font-bold text-[#4B1A12] mb-2">13+</div>
-            <div className="text-sm text-gray-600">Years Experience</div>
-          </div>
-          <div className="text-center">
-            <div className="text-3xl md:text-4xl font-bold text-[#4B1A12] mb-2">$50M+</div>
-            <div className="text-sm text-gray-600">Total Project Value</div>
-          </div>
-          <div className="text-center">
-            <div className="text-3xl md:text-4xl font-bold text-[#4B1A12] mb-2">98%</div>
-            <div className="text-sm text-gray-600">Client Satisfaction</div>
-          </div>
-        </div>
 
         {/* Project Categories */}
         <div className="flex flex-wrap justify-center gap-4 mb-12">
@@ -238,48 +219,6 @@ export default function ContractingProjects() {
                 className="object-cover rounded-lg"
               />
             </div>
-          </div>
-        </div>
-
-        {/* Client Testimonials */}
-        <div className="mb-16">
-          <h2 className="text-3xl font-bold text-[#4B1A12] text-center mb-12">What Our Clients Say</h2>
-          <div className="grid md:grid-cols-3 gap-8">
-            <Card className="border-[#4B1A12]/20">
-              <CardContent className="p-6">
-                <div className="text-[#F7CC46] text-2xl mb-4">★★★★★</div>
-                <p className="text-gray-600 mb-4">
-                  "Vin General Contracting exceeded our expectations. The quality of work and attention to detail was
-                  outstanding. Our kitchen renovation was completed on time and within budget."
-                </p>
-                <div className="font-semibold text-[#4B1A12]">- Vin & Mike Johnson</div>
-                <div className="text-sm text-gray-500">Kitchen Renovation, Burlington</div>
-              </CardContent>
-            </Card>
-
-            <Card className="border-[#4B1A12]/20">
-              <CardContent className="p-6">
-                <div className="text-[#F7CC46] text-2xl mb-4">★★★★★</div>
-                <p className="text-gray-600 mb-4">
-                  "Professional, reliable, and skilled. Sunil and his team built our dream home exactly as we
-                  envisioned. The communication throughout the project was excellent."
-                </p>
-                <div className="font-semibold text-[#4B1A12]">- David Chen</div>
-                <div className="text-sm text-gray-500">Custom Home, Oakville</div>
-              </CardContent>
-            </Card>
-
-            <Card className="border-[#4B1A12]/20">
-              <CardContent className="p-6">
-                <div className="text-[#F7CC46] text-2xl mb-4">★★★★★</div>
-                <p className="text-gray-600 mb-4">
-                  "Outstanding commercial renovation work. They transformed our restaurant space beautifully while
-                  minimizing disruption to our business. Highly recommended!"
-                </p>
-                <div className="font-semibold text-[#4B1A12]">- Maria Rodriguez</div>
-                <div className="text-sm text-gray-500">Restaurant Renovation, Toronto</div>
-              </CardContent>
-            </Card>
           </div>
         </div>
 

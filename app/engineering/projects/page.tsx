@@ -96,25 +96,6 @@ export default function EngineeringProjects() {
           </p>
         </div>
 
-        {/* Stats */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-16">
-          <div className="text-center">
-            <div className="text-3xl md:text-4xl font-bold text-[#233966] mb-2">500+</div>
-            <div className="text-sm text-gray-600">Projects Completed</div>
-          </div>
-          <div className="text-center">
-            <div className="text-3xl md:text-4xl font-bold text-[#233966] mb-2">15+</div>
-            <div className="text-sm text-gray-600">Years Experience</div>
-          </div>
-          <div className="text-center">
-            <div className="text-3xl md:text-4xl font-bold text-[#233966] mb-2">50M+</div>
-            <div className="text-sm text-gray-600">Sq Ft Designed</div>
-          </div>
-          <div className="text-center">
-            <div className="text-3xl md:text-4xl font-bold text-[#233966] mb-2">100%</div>
-            <div className="text-sm text-gray-600">Code Compliance</div>
-          </div>
-        </div>
 
         {/* Project Categories */}
         <div className="flex flex-wrap justify-center gap-4 mb-12">
