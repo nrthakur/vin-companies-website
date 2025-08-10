@@ -6,7 +6,7 @@ import Link from "next/link"
 import ContractingNav from "@/components/contracting-nav"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { Home, MapPin, Calendar, DollarSign } from "lucide-react"
+import { Home, MapPin, Calendar, DollarSign, Award } from "lucide-react"
 import Image from "next/image"
 import Footer from "@/components/footer"
 
@@ -16,73 +16,66 @@ export default function ContractingProjects() {
   const projects = [
     {
       id: 1,
-      title: "Modern Family Home",
+      title: "Elegant Custom Kitchen Renovation",
       location: "Oakville, ON",
-      year: "2023",
-      type: "Residential",
-      budget: "$850K",
+      year: "2024",
+      type: "Renovation",
       description:
-        "Custom 3,500 sq ft family home featuring open concept design, luxury finishes, and smart home technology integration.",
-      features: ["Smart Home Integration", "Custom Kitchen", "Master Suite", "3-Car Garage"],
-      image: "/house.png?height=300&width=400",
+        "This stunning kitchen was part of a complete home renovation by VIN General Contracting. Featuring custom two-tone cabinetry, premium quartz countertops, and detailed millwork, every element was crafted with precision. The bold navy base cabinets paired with crisp white uppers create a timeless and modern look. High-end appliances, hidden lighting, and flawless tile work bring both beauty and functionality to the space. Our craftsmanship ensures durability and luxury in every corner.",
+      features: ["Custom Two-Tone Cabinetry", "Premium Quartz Countertops", "Detailed Millwork", "Hidden Lighting", "High-End Appliances"],
+      image: "/kitchen.png?height=300&width=400",
     },
     {
       id: 2,
-      title: "Downtown Restaurant Renovation",
-      location: "Toronto, ON",
-      year: "2023",
-      type: "Commercial",
-      budget: "$450K",
+      title: "Custom Home Under Construction",
+      location: "Burlington, ON",
+      year: "2024",
+      type: "Residential",
       description:
-        "Complete renovation of 4,000 sq ft restaurant space including kitchen upgrade, dining area redesign, and patio expansion.",
-      features: ["Commercial Kitchen", "Dining for 120", "Outdoor Patio", "Bar Area"],
-      image: "/placeholder.svg?height=300&width=400",
+        "This custom home is being built from the ground up by VIN General Contracting with premium materials and expert precision. We use high-grade plywood and top-quality products, ensuring durability and strength that stand above typical industry standards. Every cut and joint is carefully measured for a flawless final structure. From framing to finishing, we focus on craftsmanship that lasts for generations.",
+      features: ["High-Grade Materials", "Premium Plywood", "Precision Framing", "Expert Craftsmanship", "Durable Construction"],
+      image: "/construction.png?height=300&width=400",
     },
     {
       id: 3,
-      title: "Luxury Kitchen Remodel",
-      location: "Burlington, ON",
-      year: "2023",
-      type: "Renovation",
-      budget: "$125K",
+      title: "Modern Indian Restaurant Interior",
+      location: "Toronto, ON",
+      year: "2024",
+      type: "Commercial",
       description:
-        "High-end kitchen renovation featuring custom cabinetry, quartz countertops, and premium appliances.",
-      features: ["Custom Cabinetry", "Quartz Countertops", "Premium Appliances", "Wine Storage"],
-      image: "/placeholder.svg?height=300&width=400",
+        "This restaurant project by VIN General Contracting blends modern design with traditional Indian elements to create a warm, inviting atmosphere. Featuring precision-cut CNC woodwork, a custom-crafted central binding pillar, and premium marble tables, every detail is finished with care and accuracy. From the custom millwork to the flooring patterns, we focus on quality craftsmanship and seamless execution. The space is built to impress both visually and structurally.",
+      features: ["CNC Woodwork", "Custom Central Pillar", "Premium Marble Tables", "Traditional Design Elements", "Custom Millwork"],
+      image: "/indian.png?height=300&width=400",
     },
     {
       id: 4,
-      title: "Office Building Addition",
+      title: "Custom Pharmacy",
       location: "Mississauga, ON",
-      year: "2022",
+      year: "2024",
       type: "Commercial",
-      budget: "$1.2M",
-      description: "Two-story addition to existing office building, adding 8,000 sq ft of modern office space.",
-      features: ["Modern Office Space", "Conference Rooms", "Break Areas", "Parking Expansion"],
-      image: "/placeholder.svg?height=300&width=400",
+      description: "VIN General Contracting specializes in pharmacy construction, crafting practical and efficient spaces tailored for healthcare professionals. This pharmacy features extensive custom shelving designed for maximum storage and ease of access. Built with precision and durable materials, our detailed millwork ensures a clean, professional finish. Every element from the marble countertops to the streamlined cabinetry is designed to support functionality, reliability, and a welcoming environment.",
+      features: ["Custom Shelving Systems", "Marble Countertops", "Detailed Millwork", "Professional Finish", "Healthcare-Tailored Design"],
+      image: "/pharmacy.png?height=300&width=400",
     },
     {
       id: 5,
-      title: "Basement Finishing Project",
-      location: "Hamilton, ON",
-      year: "2022",
+      title: "Custom Floating Staircase Installation",
+      location: "Brampton, ON",
+      year: "2024",
       type: "Renovation",
-      budget: "$85K",
-      description:
-        "Complete basement transformation into entertainment space with home theater, bar, and guest bedroom.",
-      features: ["Home Theater", "Wet Bar", "Guest Bedroom", "Recreation Area"],
-      image: "/placeholder.svg?height=300&width=400",
+      description: "Part of a custom home build by VIN General Contracting, this floating staircase highlights how even the simplest features deserve careful craftsmanship. Precision-cut wood, seamless glass railings, and exact installation come together to create a clean, modern look. Every joint, finish, and mounting point was handled with attention to detail. It's a perfect example of how thoughtful construction elevates both function and style in any space.",
+      features: ["Precision-Cut Wood", "Glass Railings", "Modern Design", "Expert Installation", "Attention to Detail"],
+      image: "/stairs.png?height=300&width=400",
     },
     {
       id: 6,
-      title: "Warehouse Renovation",
-      location: "Brampton, ON",
-      year: "2022",
-      type: "Industrial",
-      budget: "$650K",
-      description: "Conversion of 15,000 sq ft warehouse into modern distribution center with office space.",
-      features: ["Loading Docks", "Office Space", "Climate Control", "Security Systems"],
-      image: "/placeholder.svg?height=300&width=400",
+      title: "Franchise Restaurant Build in Progress",
+      location: "Oakville, ON",
+      year: "2024",
+      type: "Commercial",
+      description: "This vibrant franchise restaurant is both designed and built by VIN General Contracting, showcasing our ability to deliver complete turn-key commercial spaces. From custom flooring to feature walls, illuminated counters, and exposed ceiling finishes, every detail is thoughtfully executed. We focus on blending modern aesthetics with functional layouts to support day to day business needs. Our team ensures every element - from millwork to final fixtures-is crafted with precision and built to last.",
+      features: ["Turn-Key Commercial", "Custom Flooring", "Feature Walls", "Illuminated Counters", "Exposed Ceiling"],
+      image: "/rest.png?height=300&width=400",
     },
   ]
 
@@ -107,7 +100,7 @@ export default function ContractingProjects() {
 
 
         {/* Project Categories */}
-        <div className="flex flex-wrap justify-center gap-4 mb-12">
+        <div className="flex flex-wrap justify-center gap-4 mb-8">
           {filters.map((filter) => (
             <button
               key={filter}
@@ -123,6 +116,18 @@ export default function ContractingProjects() {
           ))}
         </div>
 
+        {/* View All Projects CTA */}
+        <div className="text-center mb-12">
+          <Link href="https://drive.google.com/drive/folders/1dOfTreO7SKEE0Vsx-aHb5NxlhaSgXc27" target="_blank" rel="noopener noreferrer">
+            <Button 
+              variant="outline" 
+              className="border-[#4B1A12] text-[#4B1A12] hover:bg-[#4B1A12] hover:text-white"
+            >
+              View All Projects →
+            </Button>
+          </Link>
+        </div>
+
         {/* Projects Grid */}
         <div className="grid lg:grid-cols-2 gap-8 mb-16">
           {filteredProjects.map((project) => (
@@ -135,9 +140,6 @@ export default function ContractingProjects() {
                 <div className="absolute top-4 left-4">
                   <Badge className="bg-[#4B1A12] text-white">{project.type}</Badge>
                 </div>
-                <div className="absolute top-4 right-4">
-                  <Badge className="bg-[#F7CC46] text-[#4B1A12]">{project.budget}</Badge>
-                </div>
               </div>
               <CardContent className="p-6">
                 <h3 className="text-2xl font-bold text-[#4B1A12] mb-3">{project.title}</h3>
@@ -149,10 +151,6 @@ export default function ContractingProjects() {
                   <div className="flex items-center space-x-1">
                     <Calendar className="h-4 w-4" />
                     <span>{project.year}</span>
-                  </div>
-                  <div className="flex items-center space-x-1">
-                    <DollarSign className="h-4 w-4" />
-                    <span>{project.budget}</span>
                   </div>
                 </div>
                 <p className="text-gray-600 mb-4">{project.description}</p>
@@ -175,46 +173,45 @@ export default function ContractingProjects() {
         <div className="bg-[#4B1A12] text-white rounded-2xl p-8 mb-16">
           <div className="grid lg:grid-cols-2 gap-8 items-center">
             <div>
-              <h2 className="text-3xl font-bold mb-4">Featured Project: Luxury Estate</h2>
+              <h2 className="text-3xl font-bold mb-4">Custom Luxury Home Build</h2>
               <p className="text-lg mb-6">
-                Our latest masterpiece - a stunning 6,000 sq ft luxury estate featuring custom architecture, premium
-                finishes, and sustainable building practices.
+                This beautiful custom home was fully designed and built by VIN General Contracting from the ground up. Featuring premium stonework, detailed exterior finishes, and modern architectural elements, every part of the home reflects quality craftsmanship. From foundation to final touches, we focus on precision, durability, and elegance. Our team ensures each custom home stands out with both timeless curb appeal and lasting structural integrity.
               </p>
               <div className="grid grid-cols-2 gap-4 text-sm">
                 <div>
                   <div className="flex items-center space-x-2 mb-2">
                     <Home className="h-4 w-4" />
-                    <span className="font-semibold">Size:</span>
+                    <span className="font-semibold">Type:</span>
                   </div>
-                  <p>6,000 sq ft</p>
+                  <p>Custom Home Build</p>
                 </div>
                 <div>
                   <div className="flex items-center space-x-2 mb-2">
                     <MapPin className="h-4 w-4" />
                     <span className="font-semibold">Location:</span>
                   </div>
-                  <p>Oakville, ON</p>
+                  <p>Hamilton, ON</p>
                 </div>
                 <div>
                   <div className="flex items-center space-x-2 mb-2">
                     <Calendar className="h-4 w-4" />
                     <span className="font-semibold">Completed:</span>
                   </div>
-                  <p>2024</p>
+                  <p>2023</p>
                 </div>
                 <div>
                   <div className="flex items-center space-x-2 mb-2">
-                    <DollarSign className="h-4 w-4" />
-                    <span className="font-semibold">Value:</span>
+                    <Award className="h-4 w-4" />
+                    <span className="font-semibold">Features:</span>
                   </div>
-                  <p>$1.8M</p>
+                  <p>Premium Stonework & Modern Architecture</p>
                 </div>
               </div>
             </div>
             <div className="relative aspect-video">
               <Image
-                src="/placeholder.svg?height=300&width=500"
-                alt="Luxury Estate"
+                src="/clhm.png?height=300&width=500"
+                alt="Custom Luxury Home Build"
                 fill
                 className="object-cover rounded-lg"
               />
