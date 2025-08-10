@@ -43,7 +43,7 @@ export default function EngineeringAbout() {
           </div>
           <div className="flex items-center justify-center">
             <Image
-              src="/placeholder.svg?height=400&width=500"
+              src="/aboutus.png?height=400&width=500"
               alt="Vin Engineering Office"
               width={500}
               height={400}
