@@ -8,6 +8,44 @@ import Footer from "@/components/footer"
 export default function HomePage() {
   return (
     <div className="min-h-screen bg-white">
+      {/* Header */}
+      <header className="bg-white shadow-sm border-b">
+        <div className="max-w-6xl mx-auto px-4 py-4">
+          <div className="flex items-center justify-between">
+            {/* Logo */}
+            <div className="flex items-center">
+              <Image
+                src="/group.png"
+                alt="VIN Group of Companies"
+                width={200}
+                height={60}
+                className="h-12 w-auto"
+              />
+            </div>
+            
+            {/* Navigation Buttons */}
+            <div className="flex items-center space-x-4">
+              <Link href="/engineering">
+                <Button 
+                  variant="outline" 
+                  className="border-[#233966] text-[#233966] hover:bg-[#233966] hover:text-white"
+                >
+                  Visit Engineering
+                </Button>
+              </Link>
+              <Link href="/contracting">
+                <Button 
+                  variant="outline" 
+                  className="border-[#4B1A12] text-[#4B1A12] hover:bg-[#4B1A12] hover:text-white"
+                >
+                  Visit Construction
+                </Button>
+              </Link>
+            </div>
+          </div>
+        </div>
+      </header>
+
       {/* Hero Section */}
       <section className="relative py-16 px-4">
         <div className="max-w-6xl mx-auto">
@@ -39,7 +77,7 @@ export default function HomePage() {
           <div className="grid lg:grid-cols-2 gap-8 max-w-6xl mx-auto mb-20">
             {/* Vin Engineering */}
             <Link href="/engineering" className="group">
-              <Card className="h-full bg-gray-50 hover:bg-white border-0 hover:shadow-xl transition-all duration-300">
+              <Card className="h-full bg-gray-50 hover:bg-white hover:shadow-xl transition-all duration-300">
                 <CardContent className="p-10">
                   <div className="text-center space-y-8">
                     <div className="w-full max-w-sm mx-auto">
@@ -72,7 +110,7 @@ export default function HomePage() {
 
             {/* Vin General Contracting */}
             <Link href="/contracting" className="group">
-              <Card className="h-full bg-gray-50 hover:bg-white border-0 hover:shadow-xl transition-all duration-300">
+              <Card className="h-full bg-gray-50 hover:bg-white hover:shadow-xl transition-all duration-300">
                 <CardContent className="p-10">
                   <div className="text-center space-y-8">
                     <div className="w-full max-w-sm mx-auto">
