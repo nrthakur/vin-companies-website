@@ -14,70 +14,70 @@ export default function EngineeringProjects() {
   const projects = [
     {
       id: 1,
-      title: "Downtown Office Complex",
-      location: "Calgary, AB",
-      year: "2023",
+      title: "Modern Pharmacy & Medical Unit Reception Design",
+      location: "Toronto, ON",
+      year: "2024",
       type: "Commercial",
       description:
-        "15-story mixed-use development with retail and office spaces. Structural design included post-tensioned concrete slabs and steel frame construction.",
-      services: ["Structural Design", "Foundation Engineering", "Seismic Analysis"],
-      image: "/placeholder.svg?height=300&width=400",
+        "This render showcases a sleek, contemporary reception area designed for a pharmacy and medical unit. Warm wood finishes, marble accents, and a vibrant green wall create a welcoming yet professional atmosphere, while a streamlined workstation layout enhances customer service efficiency.",
+      services: ["Interior Design", "3D Rendering", "Reception Layout"],
+      image: "/pharmacydesign.png?height=300&width=400",
     },
     {
       id: 2,
-      title: "Luxury Residential Tower",
-      location: "Vancouver, BC",
-      year: "2023",
+      title: "Modern Luxury Kitchen – Full Home Design Project",
+      location: "Oakville, ON",
+      year: "2024",
       type: "Residential",
       description:
-        "32-story residential tower with underground parking. Complex foundation design due to challenging soil conditions.",
-      services: ["Structural Engineering", "Geotechnical Consultation", "Wind Analysis"],
-      image: "/placeholder.svg?height=300&width=400",
+        "Part of a complete home design, this modern kitchen features clean lines, high gloss cabinetry, and a striking gold chandelier for a touch of elegance. Every detail, from the integrated appliances to the marble style surfaces, is carefully planned to align with the home's contemporary aesthetic, with renderings provided to help clients visualize the finished space.",
+      services: ["Kitchen Design", "3D Visualization", "Home Integration"],
+      image: "/luxury.png?height=300&width=400",
     },
     {
       id: 3,
-      title: "Manufacturing Facility",
-      location: "Edmonton, AB",
-      year: "2022",
-      type: "Industrial",
-      description: "Large-span industrial facility with specialized equipment foundations and crane support systems.",
-      services: ["Industrial Design", "Equipment Foundations", "Structural Analysis"],
-      image: "/placeholder.svg?height=300&width=400",
+      title: "Franchise Design & Permit Project",
+      location: "Burlington, ON",
+      year: "2024",
+      type: "Commercial",
+      description: "Complete franchise design and permit package, combining vibrant brand colors with a functional, efficient layout. Our team provides both construction and design services, often creating detailed renderings to help franchise owners visualize the finished space before build out.",
+      services: ["Franchise Design", "Permit Services", "Brand Integration"],
+      image: "/franchise.png?height=300&width=400",
     },
     {
       id: 4,
-      title: "Heritage Building Restoration",
-      location: "Toronto, ON",
-      year: "2022",
-      type: "Heritage",
-      description:
-        "Structural assessment and retrofit of 100-year-old heritage building while preserving historical integrity.",
-      services: ["Structural Assessment", "Heritage Consultation", "Retrofit Design"],
-      image: "/placeholder.svg?height=300&width=400",
+      title: "Medical Reception Area – Pharmacy & Clinic Render",
+      location: "Hamilton, ON",
+      year: "2024",
+      type: "Commercial",
+      description: "Conceptual render for a modern pharmacy and medical reception area, blending warm wood tones with elegant marble finishes for a professional yet inviting atmosphere. Designed to enhance patient experience, this layout provides a functional and efficient workspace for staff.",
+      services: ["Conceptual Design", "Medical Layout", "3D Rendering"],
+      image: "/medical.png?height=300&width=400",
     },
     {
       id: 5,
-      title: "Shopping Center Expansion",
+      title: "Pharmacy & Medical Unit Conversion – Floor Plan Design",
       location: "Mississauga, ON",
-      year: "2021",
+      year: "2024",
       type: "Commercial",
-      description: "Major expansion of existing shopping center including new anchor stores and parking structure.",
-      services: ["Structural Design", "Site Development", "Parking Structure"],
-      image: "/placeholder.svg?height=300&width=400",
+      description:
+        "Detailed proposed floor plan for converting an existing unit into a fully functional pharmacy and medical facility. The layout optimizes patient flow, maximizes usable space, and meets regulatory standards for both structural and interior design, ensuring smooth permit approval.",
+      services: ["Floor Plan Design", "Permit Documentation", "Regulatory Compliance"],
+      image: "/pharmacymed.png?height=300&width=400",
     },
     {
       id: 6,
-      title: "Custom Residential Homes",
-      location: "Whistler, BC",
-      year: "2021",
+      title: "Basement Second Dwelling Unit – Space-Efficient Design",
+      location: "Brampton, ON",
+      year: "2024",
       type: "Residential",
-      description: "Series of luxury mountain homes with complex geometries and challenging site conditions.",
-      services: ["Custom Home Design", "Foundation Engineering", "Site Analysis"],
-      image: "/placeholder.svg?height=300&width=400",
+      description: "Optimized basement floor plan for a legal second dwelling unit, designed to maximize living space while minimizing construction costs. The layout incorporates functional zones for bedrooms, living, and dining areas, ensuring comfort and compliance with building regulations.",
+      services: ["Space Optimization", "Building Code Compliance", "Residential Planning"],
+      image: "/basement.png?height=300&width=400",
     },
   ]
 
-  const filters = ["All Projects", "Residential", "Commercial", "Industrial", "Heritage"]
+  const filters = ["All Projects", "Residential", "Commercial"]
 
   const filteredProjects =
     activeFilter === "All Projects" ? projects : projects.filter((project) => project.type === activeFilter)
@@ -153,57 +153,6 @@ export default function EngineeringProjects() {
               </CardContent>
             </Card>
           ))}
-        </div>
-
-        {/* Featured Project */}
-        <div className="bg-[#233966] text-white rounded-2xl p-8 mb-16">
-          <div className="grid lg:grid-cols-2 gap-8 items-center">
-            <div>
-              <h2 className="text-3xl font-bold mb-4">Featured Project: Innovation Center</h2>
-              <p className="text-lg mb-6">
-                Our latest achievement - a state-of-the-art research and development facility featuring sustainable
-                design principles and cutting-edge structural solutions.
-              </p>
-              <div className="grid grid-cols-2 gap-4 text-sm">
-                <div>
-                  <div className="flex items-center space-x-2 mb-2">
-                    <Building2 className="h-4 w-4" />
-                    <span className="font-semibold">Size:</span>
-                  </div>
-                  <p>150,000 sq ft</p>
-                </div>
-                <div>
-                  <div className="flex items-center space-x-2 mb-2">
-                    <Users className="h-4 w-4" />
-                    <span className="font-semibold">Capacity:</span>
-                  </div>
-                  <p>500 researchers</p>
-                </div>
-                <div>
-                  <div className="flex items-center space-x-2 mb-2">
-                    <MapPin className="h-4 w-4" />
-                    <span className="font-semibold">Location:</span>
-                  </div>
-                  <p>Waterloo, ON</p>
-                </div>
-                <div>
-                  <div className="flex items-center space-x-2 mb-2">
-                    <Calendar className="h-4 w-4" />
-                    <span className="font-semibold">Completed:</span>
-                  </div>
-                  <p>2024</p>
-                </div>
-              </div>
-            </div>
-            <div className="relative aspect-video">
-              <Image
-                src="/placeholder.svg?height=300&width=500"
-                alt="Innovation Center"
-                fill
-                className="object-cover rounded-lg"
-              />
-            </div>
-          </div>
         </div>
 
         {/* CTA */}
