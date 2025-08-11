@@ -1,17 +1,22 @@
+"use client"
+
 import Image from "next/image"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
-import { Building2, Users, Award, Clock, Phone, Mail } from "lucide-react"
+import { Building2, Users, Award, Clock, Phone, Mail, Menu, X } from "lucide-react"
 import Footer from "@/components/footer"
+import { useState } from "react"
 
 export default function HomePage() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false)
+
   return (
     <div className="min-h-screen bg-white">
       {/* Header */}
       <header className="bg-white shadow-sm border-b">
         <div className="max-w-6xl mx-auto px-4 py-4">
-          <div className="flex items-center justify-between">
+          <div className="flex items-center justify-between h-16">
             {/* Logo */}
             <div className="flex items-center">
               <Image
@@ -19,12 +24,12 @@ export default function HomePage() {
                 alt="VIN Group of Companies"
                 width={200}
                 height={60}
-                className="h-12 w-auto"
+                className="h-8 sm:h-12 w-auto"
               />
             </div>
             
-            {/* Navigation Buttons */}
-            <div className="flex items-center space-x-4">
+            {/* Desktop Navigation */}
+            <div className="hidden md:flex items-center space-x-4">
               <Link href="/engineering">
                 <Button 
                   variant="outline" 
@@ -42,7 +47,38 @@ export default function HomePage() {
                 </Button>
               </Link>
             </div>
+
+            {/* Mobile menu button */}
+            <div className="md:hidden">
+              <Button variant="ghost" size="icon" onClick={() => setIsMenuOpen(!isMenuOpen)}>
+                {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+              </Button>
+            </div>
           </div>
+
+          {/* Mobile Navigation */}
+          {isMenuOpen && (
+            <div className="md:hidden py-4 border-t border-gray-100">
+              <div className="flex flex-col space-y-4">
+                <Link href="/engineering" onClick={() => setIsMenuOpen(false)}>
+                  <Button 
+                    variant="outline" 
+                    className="border-[#233966] text-[#233966] hover:bg-[#233966] hover:text-white w-full"
+                  >
+                    Visit Engineering
+                  </Button>
+                </Link>
+                <Link href="/contracting" onClick={() => setIsMenuOpen(false)}>
+                  <Button 
+                    variant="outline" 
+                    className="border-[#4B1A12] text-[#4B1A12] hover:bg-[#4B1A12] hover:text-white w-full"
+                  >
+                    Visit Construction
+                  </Button>
+                </Link>
+              </div>
+            </div>
+          )}
         </div>
       </header>
 
